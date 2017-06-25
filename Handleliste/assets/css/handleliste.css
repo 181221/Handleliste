@@ -1,0 +1,83 @@
+body {
+	font-family: Roboto;
+	background-image: "assets/bilder/bakgrunn.jpg";
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+h1 {
+	background: #2980b9;
+	color: white;
+	margin: 0;
+	padding: 10px 20px;
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+ul {
+	list-style: none; /*får å fjerne ul dotter*/
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	background: white;
+	height: 40px;
+	line-height: 40px;
+	color: #666;
+}
+
+span {
+	background: #e74c3c;
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	width: 0px;
+	display: inline-block;
+	transition: 0.2s linear;
+	opacity: 0;
+}
+
+input {
+	font-size: 18px;
+	color: #2980b9;
+	background-color: #f7f7f7;
+	width: 100%;
+	padding: 13px 13px 13px 20px;
+	box-sizing: border-box; /* få input til å tilpasse boxen */
+	border: 3px solid rgba(0,0,0,0); /* få vekk stygt skille*/
+}
+
+li:nth-child(2n) {
+	background: #f7f7f7;
+}
+
+li:hover span {
+	width: 40px;
+	opacity: 1.0;
+}
+
+input:focus {
+	background: #fff;
+	border: 3px solid #2980b9;
+	outline: none; 
+}
+
+.fa-plus {
+	float: right;
+}
+
+#container {
+	box-shadow: 0 0 3px rgba(0,0,0, 0.2);
+	width: 360px;
+	background-color: #f7f7f7;
+	margin: 100px auto;
+}
+
+.completed {
+	color: gray;
+	text-decoration: line-through;
+}
+
